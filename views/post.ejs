@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- CSS only -->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        h1{
+            margin-top: 30px;
+            margin-bottom:30px;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(13, 1, 22);
+            font-weight: 500;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border: 2px solid gray;
+        }
+        .container{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="container">
+        <a href="/">Home</a>
+        <div style="display:none"><%= blog %></div>
+        <h1 style="text-align: center;"><%=  blog.title %> </h1>
+        <p><%= blog.post %></p>
+        <form action="/post/:titleOfPost" method="post">
+            <button name="yo" value="<%= blog.title %>"class="btn btn-danger" onclick="alert('Your Blog will be Permanentaly deleted')">Delete</button>
+        </form>
+    </div>
+        
+            
+</body>
+
+
+

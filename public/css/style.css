@@ -1,0 +1,126 @@
+html {
+  background-image: -webkit-linear-gradient(#a683e3 40%, #e4e9fd 90%);
+}
+body {
+  margin: 0;
+  background-color: #ffffff;
+  min-height: 800px;
+}
+/* nav bar */
+.nav {
+  /* background-color: rgb(252, 227, 252);*/
+  background-image: -webkit-linear-gradient(#a683e3 40%, #eaeefd 90%);
+  padding-bottom: 20px;
+}
+.nav-right {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.nav-brand {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.navbar-dark .nav-link {
+  color: rgb(47, 5, 88);
+}
+
+.nav-link:hover {
+  color: black;
+  font-weight: 600;
+  transition: ease-in;
+}
+/*h1*/
+h1 {
+  margin: 2.5% 0;
+}
+
+input {
+  width: 80%;
+  border-radius: 5px;
+  border: 1px solid grey;
+  margin-left: 2%;
+}
+textarea {
+  width: 90%;
+  height: 300px;
+  border-radius: 10px;
+  margin-left: 2%;
+  margin-top: 1%;
+}
+label {
+  margin-left: 2%;
+}
+.btn {
+  margin-left: 2%;
+}
+.center {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+footer {
+  /*background-color: rgb(252, 227, 252);*/
+  position: fixed;
+  margin-top: auto;
+  margin-bottom: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  text-align: center;
+  text-align: bottom;
+  background-image: -webkit-linear-gradient(#eaeefd 10%, #a683e3 100%);
+}
+.box {
+  border: 1.5px solid rgb(7, 7, 88);
+  margin: 2%;
+  max-width: 900px;
+  padding: 5px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 8px;
+  box-shadow: 3px 2px #837a92;
+}
+.box-contact {
+  border: 1.5px solid rgb(7, 7, 88);
+  max-width: 400px;
+  max-height: 350px;
+  margin: auto;
+  padding: 22px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 8px;
+  box-shadow: 3px 2px #837a92;
+}
+.box-contact textarea {
+  max-height: 100px;
+}
+.box-contact input {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin-top: 1%;
+}
+.social-link {
+  text-align: center;
+  margin-top: 3%;
+}
+.social {
+  margin: 5px;
+  font-size: 20px;
+  color: black;
+}
+@media (max-width: 600px) {
+  img {
+    width: 300px;
+  }
+  textarea {
+    width: 90%;
+    height: 250px;
+  }
+}

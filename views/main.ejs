@@ -1,0 +1,20 @@
+<%- include("nav") -%>
+<div class="container">
+    <h1 style="display: none;"><%= blog %></h1>
+    <h1>Home</h1>
+        <%  blog.slice().reverse().forEach(function(foundblog){ %>
+            <div class="box">
+                <div style="display: flex;">
+                    <h2><%= foundblog.title %></h2><small style="font-size: x-small;margin-left:auto;"><strong><%=foundblog.name%> </strong></small><hr>
+                    <small style="font-size: x-small;">, <%=foundblog.date%></small>
+                </div>
+           
+            
+            <p><%= foundblog.post.substring(0,130) %>...<a href="/post/<%=foundblog.title%>">read more</a></p>
+        </div>
+       <% }) %> 
+
+  
+    
+</div>
+<%- include("footer") -%>
